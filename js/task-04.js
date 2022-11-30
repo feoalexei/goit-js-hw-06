@@ -10,4 +10,6 @@ decrementBtn.addEventListener('click', () => updateValue((counterValue -= 1)));
 
 incrementBtn.addEventListener('click', () => updateValue((counterValue += 1)));
 
-const updateValue = (result) => (valueDisplay.textContent = result);
+function updateValue(result) {
+  valueDisplay.textContent = result;
+}
